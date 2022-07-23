@@ -1,0 +1,17 @@
+{
+  "name": "cosmos-voters",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@cosmjs/cosmwasm-stargate": "^0.28.11",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "@types/yargs": "^17.0.10"
+  }
+}
