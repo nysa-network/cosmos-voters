@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@types/yargs": "^17.0.10",
+    "@vercel/ncc": "vercel/ncc",
     "pkg": "vercel/pkg",
     "typescript": "^4.7.4"
   }
