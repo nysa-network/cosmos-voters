@@ -1,17 +1,24 @@
 {
   "name": "cosmos-voters",
+  "bin": "cosmos-voters",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "build": "ncc build src/*.ts && pkg dist/index.js --out-path target",
     "test": "jest"
+  },
+  "pkg": {
+    "scripts": "dist/**/*.js",
+    "outputPath": "target"
   },
   "dependencies": {
     "@cosmjs/cosmwasm-stargate": "^0.28.11",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
-    "typescript": "^4.7.4",
-    "@types/yargs": "^17.0.10"
+    "@types/yargs": "^17.0.10",
+    "pkg": "vercel/pkg",
+    "typescript": "^4.7.4"
   }
 }
